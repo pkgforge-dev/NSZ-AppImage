@@ -100,7 +100,7 @@ chmod +x ./pelf
 echo "Generating [dwfs]AppBundle..."
 ./pelf \
 	--compression "-C zstd:level=22 -S26 -B8" \
-	--appbundle-id="NSZ-$VERSION"       \
+	--appbundle-id="NSZ-$VERSION"             \
 	--appimage-compat                         \
 	--add-updinfo "$UPINFO"                   \
 	--add-appdir ./AppDir                     \
