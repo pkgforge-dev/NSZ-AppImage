@@ -30,6 +30,8 @@ pacman -Syu --noconfirm \
 	libxkbcommon-x11  \
 	libxrandr         \
 	libxtst           \
+	libxss            \
+	mtdev             \
 	pulseaudio        \
 	pulseaudio-alsa   \
 	sdl2              \
