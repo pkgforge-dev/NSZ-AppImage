@@ -33,6 +33,7 @@ pacman -Syu --noconfirm \
 	pulseaudio        \
 	pulseaudio-alsa   \
 	sdl2              \
+	wayland           \
 	wget              \
 	xorg-server-xvfb  \
 	zsync
