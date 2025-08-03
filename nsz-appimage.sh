@@ -25,10 +25,27 @@ mkdir -p ./AppDir && (
 		--python-ver 3.12     \
 		--python-pkg nsz[gui] \
 		--dst-dir ./ sharun -- nsz
+
+	# barely anythign is dlopened because the app needs some file to start the gui
+	# so we will add the rest of deps manually
+	./sharun-aio l -v -s -k \
+		/usr/lib/lib*GL*       \
+		/usr/lib/dri/*         \
+		/usr/lib/libudev*      \
+		/usr/lib/libdrm*       \
+		/usr/lib/libxcb-*      \
+		/usr/lib/libXss*       \
+		/usr/lib/libxcb-randr* \
+		/usr/lib/libwayland*
 	rm -f ./sharun-aio
 
 	ln ./sharun ./AppRun
 	./sharun -g
+
+	# sharun is not stripping python due to issues with other packages
+	# however that issue is not present here lol
+	strip --strip-all ./lib/libpython*
+	find ./lib/python* -type f -name '*.so*' -exec strip --strip-all {} \;
 
 	echo "Adding icon and desktop entry..."
 	# Does this project have an icon???
