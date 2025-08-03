@@ -29,6 +29,8 @@ mkdir -p ./AppDir && (
 	# barely anythign is dlopened because the app needs some file to start the gui
 	# so we will add the rest of deps manually
 	./sharun-aio l -v -s -k \
+		/usr/lib/libdbus-*     \
+		/usr/lib/libmtdev*     \
 		/usr/lib/lib*GL*       \
 		/usr/lib/dri/*         \
 		/usr/lib/libudev*      \
@@ -98,7 +100,7 @@ chmod +x ./pelf
 echo "Generating [dwfs]AppBundle..."
 ./pelf \
 	--compression "-C zstd:level=22 -S26 -B8" \
-	--appbundle-id="NSZ-$VERSION"       \
+	--appbundle-id="NSZ-$VERSION"             \
 	--appimage-compat                         \
 	--add-updinfo "$UPINFO"                   \
 	--add-appdir ./AppDir                     \
