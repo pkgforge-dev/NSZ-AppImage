@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=DUMMY
 export DESKTOP=DUMMY
 export MAIN_BIN=nsz
+export APPNAME=NSZ
 export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
 
