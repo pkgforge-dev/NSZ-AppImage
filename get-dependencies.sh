@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm nsz python-kivy
+pacman -Syu --noconfirm nsz python-kivy sdl2_ttf python-pillow
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"

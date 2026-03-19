@@ -14,6 +14,7 @@ export MAIN_BIN=nsz
 export APPNAME=NSZ
 export DEPLOY_OPENGL=1
 export DEPLOY_PYTHON=1
+export DEPLOY_SDL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/nsz
