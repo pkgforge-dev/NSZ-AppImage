@@ -8,7 +8,7 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=DUMMY
+export ICON=https://raw.githubusercontent.com/nicoboss/nsz/refs/heads/master/nsz/gui/nsZip.png
 export DESKTOP=DUMMY
 export MAIN_BIN=nsz
 export APPNAME=NSZ
