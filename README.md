@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/NSZ-AppImage)](https://github.com/pkgforge-dev/NSZ-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/nicoboss/nsz/refs/heads/master/nsz/gui/nsZip.png" width="128" />
 </p>
 
 
